@@ -6,7 +6,7 @@ type Question = {
     responses?: ResponseOptions;
 }
 
-type ResponseOptions = Record<string, { result: Result } | Question>
+type ResponseOptions = Array<{ result: Result, option: string } | Question>
 
 export type Flow = {
     name: string;

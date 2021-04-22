@@ -8,26 +8,29 @@ export const flows: Array<Flow> = [
         "question": {
             "text": "Vælg den kategori dit køb passer til",
             "type": "Multiple choice",
-            "responses": {
-                "Vareforbrug": {
+            "responses": [
+                {
+                    "option": "Vareforbrug",
                     "result": {
                         "account": 1210,
                         "tax": 'K'
                     }
                 },
-                "Arbejdstøj (m. logo)": {
+                {
+                    "option": "Arbejdstøj (m. logo)",
                     "result": {
                         "account": 1840,
                         "tax": 'K'
                     }
                 },
-                "Arbejdstøj (kan anvendes privat)": {
+                {
+                    "option": "Arbejdstøj (kan anvendes privat)",
                     "result": {
                         "account": 1895,
                         "tax": 'F'
                     }
                 }
-            }
+            ]
         }
     },
     {
@@ -45,44 +48,50 @@ export const flows: Array<Flow> = [
         "question": {
             "text": "Hvor er leverandøren fra?",
             "type": "Multiple choice",
-            "responses": {
-                "Dansk leverandør": {
+            "responses": [
+                {
+                    "option": "Dansk leverandør",
                     "text": "Hvad er beløbet?",
                     "type": "Multiple choice",
-                    "responses": {
-                        "Under 30.000": {
+                    "responses": [
+                        {
+                            "option": "Under 30.000",
                             "result": {
                                 "account": 1840,
                                 "tax": 'K'
                             }
                         },
-                        "Over 30.000": {
+                        {
+                            "option": "Over 30.000",
                             "result": {
                                 "account": 5310,
                                 "tax": 'K'
                             }
-                        },
-                    }
+                        }
+                    ]
                 },
-                "Udenlandsk leverandør": {
+                {
+                    "option": "Udenlandsk leverandør",
                     "text": "Hvad er beløbet?",
                     "type": "Multiple choice",
-                    "responses": {
-                        "Under 30.000": {
+                    "responses": [
+                        {
+                            "option": "Under 30.000",
                             "result": {
                                 "account": 1220,
                                 "tax": "KYE"
                             }
                         },
-                        "Over 30.000": {
+                        {
+                            "option": "Over 30.000",
                             "result": {
                                 "account": 5310,
                                 "tax": "KYE"
                             }
-                        },
-                    }
+                        }
+                    ]
                 }
-            }
+            ]
         }
     },
     {
@@ -92,20 +101,22 @@ export const flows: Array<Flow> = [
         "question": {
             "text": "Vælg den kategori dit køb passer til",
             "type": "Multiple choice",
-            "responses": {
-                "Medarbejdere": {
+            "responses": [
+                {
+                    "option": "Medarbejdere",
                     "result": {
                         "account": 1440,
                         "tax": 'KK'
                     }
                 },
-                "Forretningsforbindelser": {
+                {
+                    "option": "Forretningsforbindelser",
                     "result": {
                         "account": 1650,
                         "tax": 'KK'
                     }
                 }
-            }
+            ]
         }
     },
     {
@@ -115,20 +126,22 @@ export const flows: Array<Flow> = [
         "question": {
             "text": "Vælg den kategori dit køb passer til",
             "type": "Multiple choice",
-            "responses": {
-                "Forretningsforbindelser": {
+            "responses": [
+                {
+                    "option": "Forretningsforbindelser",
                     "result": {
                         "account": 1650,
                         "tax": 'F'
                     }
                 },
-                "Personalepleje": {
+                {
+                    "option": "Personalepleje",
                     "result": {
                         "account": 1430,
                         "tax": 'F'
                     }
                 }
-            }
+            ]
         }
     },
     {
@@ -138,20 +151,22 @@ export const flows: Array<Flow> = [
         "question": {
             "text": "Vælg den kategori dit køb passer til",
             "type": "Multiple choice",
-            "responses": {
-                "Blomster som gave": {
+            "responses": [
+                {
+                    "option": "Blomster som gave",
                     "result": {
                         "account": null,
                         "tax": 'F'
                     }
                 },
-                "Blomster til virksomheden": {
+                {
+                    "option": "Blomster til virksomheden",
                     "result": {
                         "account": 1650,
                         "tax": 'K'
                     }
                 }
-            }
+            ]
         }
     }
 ];
