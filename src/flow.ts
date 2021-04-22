@@ -50,13 +50,13 @@ export const flows: Array<Flow> = [
                     "text": "Hvad er beløbet?",
                     "type": "Multiple choice",
                     "responses": {
-                        "Under 13.500": {
+                        "Under 30.000": {
                             "result": {
                                 "account": 1840,
                                 "tax": 'K'
                             }
                         },
-                        "Over 13.500": {
+                        "Over 30.000": {
                             "result": {
                                 "account": 5310,
                                 "tax": 'K'
@@ -68,13 +68,13 @@ export const flows: Array<Flow> = [
                     "text": "Hvad er beløbet?",
                     "type": "Multiple choice",
                     "responses": {
-                        "Under 13.500": {
+                        "Under 30.000": {
                             "result": {
                                 "account": 1220,
                                 "tax": "KYE"
                             }
                         },
-                        "Over 13.500": {
+                        "Over 30.000": {
                             "result": {
                                 "account": 5310,
                                 "tax": "KYE"
