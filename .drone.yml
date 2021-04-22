@@ -1,0 +1,17 @@
+---
+kind: pipeline
+name: default
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: publish
+  image: plugins/docker
+  settings:
+    repo: docker.billy.dk/flow-service
+    registry: docker.billy.dk
+    tags:
+      - ${DRONE_COMMIT}
+      - ${DRONE_BRANCH//\//_}
