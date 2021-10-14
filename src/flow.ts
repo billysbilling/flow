@@ -1,6 +1,6 @@
-import { Flow } from "./types";
+import { Category } from "./types";
 
-export const flows: Array<Flow> = [
+export const flows: Array<Category> = [
     {
         "name": "Tøj",
         "keywords": "tøj arbejdstøj firmatøj jakkesæt sikkerhedstøj",
